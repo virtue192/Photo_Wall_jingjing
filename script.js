@@ -9,9 +9,9 @@ let loadedImages = [];
 let leftArrow;
 let rightArrow;
 
-// Calculate the number of days since the start date
+// **Love date** - Calculate the number of days since the start date
 function calculateLoveDays() {
-    const startDate = new Date('2020-01-01'); // **Love date**
+    const startDate = new Date('2020-01-01');
     const today = new Date();
     startDate.setHours(0, 0, 0, 0);
     today.setHours(0, 0, 0, 0);
