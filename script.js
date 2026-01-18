@@ -11,7 +11,7 @@ let rightArrow;
 
 // **Love date** - Calculate the number of days since the start date
 function calculateLoveDays() {
-    const startDate = new Date('2020-01-01');
+    const startDate = new Date('2026-01-11');
     const today = new Date();
     startDate.setHours(0, 0, 0, 0);
     today.setHours(0, 0, 0, 0);
