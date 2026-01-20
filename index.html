@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Our Love Journey</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive-layout.css">
+    <link rel="stylesheet" href="decorative-elements.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="readme_img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="readme_img/favicon//favicon-32x32.png">
@@ -21,17 +23,23 @@
 
     <main>
         <!--**Name**-->
-        <section id="name">
+        <section id="name" class="decorative-container">
+            <div class="decor-gramophone decor-1"></div>
+            <div class="decor-camera decor-2"></div>
             <h2>Romeo & Juliet</h2>
         </section>
 
-        <section id="timer">
-            <audio id="bgm" src="music/music1.mp3" controls></audio>
+        <section id="timer" class="decorative-container">
+            <div class="decor-music decor-5"></div>
+            <div class="decor-film decor-6"></div>
+            <audio id="bgm" src="music/music1.mp3" controls preload="auto"></audio>
             <p>We have been in love for</p>
             <h2><span id="loveDays">0</span> Days</h2>
         </section>
 
-        <section id="dates">
+        <section id="dates" class="decorative-container">
+            <div class="decor-photo decor-1"></div>
+            <div class="decor-music decor-3"></div>
             <!--**Birthday**-->
             <div class="date-item">
                 <p>2006.07.24</p>
@@ -49,7 +57,11 @@
             </div>
         </section>
 
-        <section id="gallery">
+        <section id="gallery" class="decorative-container">
+            <div class="decor-camera decor-1"></div>
+            <div class="decor-film decor-2"></div>
+            <div class="decor-photo decor-3"></div>
+            <div class="decor-gramophone decor-4"></div>
         </section>
     </main>
 

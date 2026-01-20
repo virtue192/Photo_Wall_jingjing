@@ -1,0 +1,131 @@
+/* 响应式布局增强 */
+@media (max-width: 768px) {
+    #gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3px;
+    }
+    
+    #timer {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    
+    .date-item {
+        margin: 4px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #gallery {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #gallery {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+    }
+}
+
+/* 瀑布流布局支持 */
+.masonry {
+    column-count: auto;
+    column-gap: 5px;
+}
+
+.masonry img {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 5px;
+    break-inside: avoid;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+/* 图片悬停效果增强 - Ins风格 */
+.thumbnail {
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.thumbnail:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+}
+
+/* 图片日期标签 - Ins风格 */
+.thumbnail::after {
+    content: attr(data-date);
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #666;
+    padding: 3px 6px;
+    font-size: 0.65rem;
+    font-weight: 300;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 2px;
+}
+
+.thumbnail:hover::after {
+    opacity: 1;
+}
+
+/* 平滑滚动 */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 加载动画 */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(100, 100, 100, 0.2);
+    border-radius: 50%;
+    border-top-color: #999;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* 简约背景 - Ins风格 */
+body {
+    background-color: #f0f2f5;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* 卡片效果 - Ins风格 */
+section {
+    background: white;
+    border-radius: 0;
+    padding: 30px 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+/* 标题样式 - Ins风格 */
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #2c3e50;
+    background: none;
+    -webkit-background-clip: none;
+    -webkit-text-fill-color: inherit;
+    text-shadow: none;
+    letter-spacing: 0.5px;
+}

@@ -1,0 +1,142 @@
+/* 装饰元素样式 - 留声机、摄影机等小图标 */
+
+/* 留声机 SVG */
+.decor-gramophone {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="65" r="25" fill="%23e0e0e0" stroke="%239e9e9e" stroke-width="1"/><rect x="45" y="40" width="10" height="25" fill="%23bdbdbd" stroke="%239e9e9e" stroke-width="1"/><circle cx="50" cy="50" r="5" fill="%239e9e9e"/><path d="M50 35 L50 20 L30 35 Z" fill="%23bdbdbd" stroke="%239e9e9e" stroke-width="1"/><circle cx="70" cy="75" r="10" fill="%23e0e0e0" stroke="%239e9e9e" stroke-width="1"/><path d="M70 75 L85 75" stroke="%239e9e9e" stroke-width="1"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* 摄影机 SVG */
+.decor-camera {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="10" y="20" width="80" height="60" rx="5" fill="%23bdbdbd" stroke="%239e9e9e" stroke-width="1"/><circle cx="50" cy="50" r="20" fill="%23e0e0e0" stroke="%239e9e9e" stroke-width="1"/><circle cx="50" cy="50" r="10" fill="%239e9e9e"/><rect x="25" y="10" width="50" height="10" rx="2" fill="%23bdbdbd" stroke="%239e9e9e" stroke-width="1"/><rect x="35" y="85" width="30" height="5" rx="1" fill="%23bdbdbd" stroke="%239e9e9e" stroke-width="1"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* 胶片 SVG */
+.decor-film {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="10" y="10" width="80" height="80" fill="%23333" stroke="%23555" stroke-width="2"/><rect x="20" y="20" width="60" height="60" fill="%23555"/><circle cx="30" cy="30" r="5" fill="%23e0e0e0"/><circle cx="30" cy="70" r="5" fill="%23e0e0e0"/><circle cx="70" cy="30" r="5" fill="%23e0e0e0"/><circle cx="70" cy="70" r="5" fill="%23e0e0e0"/><path d="M20 35 L80 35 M20 65 L80 65 M35 20 L35 80 M65 20 L65 80" stroke="%23333" stroke-width="3"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* 音乐符号 SVG */
+.decor-music {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M30 20 L30 80 M30 30 Q50 20 50 40 Q50 60 30 70 M60 20 L60 80 M60 40 Q80 30 80 50 Q80 70 60 80" stroke="%239e9e9e" stroke-width="3" fill="none"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* 照片装饰 SVG */
+.decor-photo {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect x="15" y="15" width="70" height="70" fill="%23f0f0f0" stroke="%23bdbdbd" stroke-width="2"/><rect x="25" y="25" width="20" height="20" rx="2" fill="%23e0e0e0" stroke="%23bdbdbd" stroke-width="1"/><circle cx="65" cy="40" r="10" fill="%23e0e0e0" stroke="%23bdbdbd" stroke-width="1"/><path d="M25 65 L55 65 L55 85 Z" fill="%23e0e0e0" stroke="%23bdbdbd" stroke-width="1"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+/* 装饰元素容器 */
+.decorative-container {
+    position: relative;
+    overflow: visible;
+}
+
+/* 装饰元素定位 */
+.decor-1 {
+    top: 10px;
+    left: 10px;
+}
+
+.decor-2 {
+    top: 10px;
+    right: 10px;
+}
+
+.decor-3 {
+    bottom: 10px;
+    left: 10px;
+}
+
+.decor-4 {
+    bottom: 10px;
+    right: 10px;
+}
+
+.decor-5 {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.decor-6 {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .decor-gramophone,
+    .decor-camera,
+    .decor-film,
+    .decor-music,
+    .decor-photo {
+        width: 25px;
+        height: 25px;
+        opacity: 0.6;
+    }
+}
+
+/* 悬停效果 */
+.decor-gramophone:hover,
+.decor-camera:hover,
+.decor-film:hover,
+.decor-music:hover,
+.decor-photo:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+/* 动画效果（可选） */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-5px); }
+}
+
+.decor-gramophone {
+    animation: float 3s ease-in-out infinite;
+}
+
+.decor-camera {
+    animation: float 2.5s ease-in-out infinite 0.5s;
+}
+
+.decor-film {
+    animation: float 3.5s ease-in-out infinite 1s;
+}
